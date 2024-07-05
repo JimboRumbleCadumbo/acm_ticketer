@@ -1,3 +1,4 @@
 /ticket_bot/node_modules
-.env
+/.vscode
 
+.env
