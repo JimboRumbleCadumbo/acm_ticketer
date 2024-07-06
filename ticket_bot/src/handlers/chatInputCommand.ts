@@ -9,14 +9,13 @@ import {
   GuildTextBasedChannel,
   Interaction,
   InteractionType,
-} from "discord.js";
+} from 'discord.js';
 
 export async function handleChatInputCommand(
   client: Client,
   interaction: ChatInputCommandInteraction<CacheType>
 ) {
   console.log("HandleChatInputCommand");
-
   switch (interaction.commandName) {
     case "setup": {
       const channel = interaction.options.getChannel(
